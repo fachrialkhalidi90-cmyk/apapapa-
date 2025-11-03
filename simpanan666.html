@@ -1,0 +1,571 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Direktorat Jenderal Kesehatan Lanjutan</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://keslan.kemkes.go.id/faticon.ico">
+    <meta name="google-site-verification" content="VhK1d5Rk2nQeXnd1N15c6E5-j_xLER2m484RsccznT8">
+
+    <!-- <link href="https://keslan.kemkes.go.id/css/fullcalendar.min.css" rel="stylesheet" />
+    <link href="https://keslan.kemkes.go.id/css/fullcalendar.print.min.css" rel="stylesheet" media="print" /> -->
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+    <!-- <link rel="stylesheet" href="https://keslan.kemkes.go.id/css/select2.min.css"/> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" /> -->
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://keslan.kemkes.go.id/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css" integrity="sha512-ARJR74swou2y0Q2V9k0GbzQ/5vJ2RBSoCWokg4zkfM29Fb3vZEQyv0iWBMW/yvKgyHSR/7D64pFMmU8nYmbRkg==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap4.min.css">
+    <style>.cke{visibility:hidden;}</style></head><body class="font-poppins"><strict-transport-security: max-age="31536000;" includesubdomains="">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #FFFFF0;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        p, span, button, ul, li {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        a, a:hover, a:focus {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+
+    <!-- JS -->
+    <script src="https://keslan.kemkes.go.id/ckeditor/ckeditor.js" type="text/javascript"></script>
+    <script src="https://keslan.kemkes.go.id/js/jquery/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
+    <script src="https://keslan.kemkes.go.id/js/plugins/plugins.js"></script>
+
+
+
+    <!-- Preloader -->
+    <!-- <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div> -->
+
+    <!-- ##### Header Area Start ##### -->
+<style>
+    @media only screen and (max-width: 600px) {
+        .hidden {
+            display: none !important;
+        }
+
+        .logo {
+            max-width: 137px;
+        }
+    }
+</style>
+
+<header class="header-area">
+    <!-- Navbar Area -->
+    <div id="sticker-sticky-wrapper" class="sticky-wrapper is-sticky" style="height: 70px;"><div class="news-main-menu" id="sticker" style="width: 796px; position: fixed; top: 0px; z-index: inherit;">
+        <div class="classy-nav-container light left breakpoint-on">
+
+            <!-- Menu -->
+            <nav style="height:70px;" class="classy-navbar justify-content-between" id="magNav">
+
+                <!-- Nav brand -->
+                <a href="https://keslan.kemkes.go.id/" class="nav-brand logo"><img src="https://keslan.kemkes.go.id/img/LogoKemKesDKL.png" alt=""></a>
+
+
+                <!-- Navbar Toggler -->
+                <div class="classy-navbar-toggler">
+                    <span class="navbarToggler"><span></span><span></span><span></span></span>
+                </div>
+
+                <!-- Nav Content -->
+                <div class="nav-content d-flex align-items-center">
+                    <div class="classy-menu">
+
+                        <!-- Close Button -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+
+                        <!-- Nav Start -->
+                                                    <div class="classynav">
+                                <ul>
+                                    <li class="active"><a href="https://keslan.kemkes.go.id/">Beranda</a></li>
+                                    <li class="cn-dropdown-item has-down"><a href="#">Profil</a>
+                                        <ul class="dropdown">
+                                            <li class="has-down"><a href="#">Profil Ditjen Keslan</a>
+                                                <!-- Dropdown untuk Tugas dan Fungsi -->
+                                                <ul class="dropdown">
+                                                    <li><a href="https://keslan.kemkes.go.id/profil">Tugas dan Fungsi</a></li>
+                                                    <li><a href="https://keslan.kemkes.go.id/Visimisiyankes">Visi dan Misi</a></li>
+                                                    <li><a href="https://keslan.kemkes.go.id/strukturorganisasi">Struktur Organisasi</a></li>
+                                                    <li><a href="https://keslan.kemkes.go.id/profil/pejabat">Profil Pejabat</a></li>
+                                                    <li><a href="https://keslan.kemkes.go.id/lhkpn">LHKPN Pejabat</a></li>
+                                                </ul>
+                                            <span class="dd-trigger"></span></li>
+                                            <li class="has-down"><a href="#">Profil PPID</a>
+                                                <ul class="dropdown">
+                                                    <li><a href="https://keslan.kemkes.go.id/Profilppid">Profil Singkat PPID</a></li>
+                                                    <li><a href="https://keslan.kemkes.go.id/Visimisippid">Visi dan Misi PPID</a></li>
+                                                    <li style="display: inline-block;"><a href="https://keslan.kemkes.go.id/Tugasfungsippid">Tugas dan Fungsi</a></li>
+                                                    <li><a href="https://keslan.kemkes.go.id/Strukturppid">Struktur PPID</a></li>
+                                                    <li><a href="https://keslan.kemkes.go.id/maklumat">Maklumat</a></li>
+                                                </ul>
+                                            <span class="dd-trigger"></span></li>
+                                        </ul>
+                                    <span class="dd-trigger"></span></li>
+                                    <li class="cn-dropdown-item has-down"><a href="#">Informasi Publik</a>
+                                        <ul class="dropdown" style="width: 200px;">
+                                            <li style="display: inline-block;"><a href="https://keslan.kemkes.go.id/ppid/informasi-berkala">Informasi Berkala</a></li>
+                                            <li style="display: inline-block;"><a href="https://keslan.kemkes.go.id/ppid/informasi-setiap-saat">Informasi Setiap Saat</a></li>
+                                            <li style="display: inline-block;"><a href="https://keslan.kemkes.go.id/ppid/informasi-serta-merta">Informasi Serta Merta</a></li>
+                                            <li><a href="https://keslan.kemkes.go.id/Wbs">WBS Kemenkes</a></li>
+                                            <li><a href="https://keslan.kemkes.go.id/lapor">SP4N-Lapor</a></li>
+                                            <li style="display: inline-block;"><a href="https://keslan.kemkes.go.id/pusatbantuan">FAQ</a></li>
+                                        </ul>
+                                    <span class="dd-trigger"></span></li>
+                                    <li><a href="https://keslan.kemkes.go.id/uptkami">UPT</a></li>
+                                    <li><a href="https://keslan.kemkes.go.id/produkhukum">Produk Hukum</a></li>
+                                    <li><a href="https://keslan.kemkes.go.id/contact">KONTAK</a></li>
+                                </ul>
+                            </div>
+
+                        
+                        <!-- Nav End -->
+                    </div>
+
+                    <div class="top-meta-data d-flex align-items-center ">
+                        <!-- Top Search Area -->
+                        <div class="top-search-area">
+                        <form action="https://keslan.kemkes.go.id/Cari" method="get" autocomplete="off">
+    <input type="text" name="q" id="q" placeholder="Search and hit enter..." value="" maxlength="255" pattern="^[a-zA-Z0-9\s.,!?@_-]*$" required="">
+    <button type="submit" class="btn">
+        <i class="fa fa-search" aria-hidden="true"></i>
+    </button>
+</form>
+                        </div>
+                        <!-- Login -->
+                                                    <!-- <a href="" class="login-btn"><i class="fa fa-user" aria-hidden="true"></i></a> -->
+                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div></div>
+</header>
+
+<!-- ##### Header Area End ##### -->    <style>
+    .boxJudul {
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        background-color: #f0f7fb;
+        background-image: url(https://ayosehat.kemkes.go.id/imagex/content/f835d6586a87cffec56dd2618ab49231.webp);
+        background-position: 9px 5px;
+        background-repeat: no-repeat;
+        border: solid 1px #3498db;
+        border-radius: 6px;
+        line-height: 18px;
+        overflow: hidden;
+        padding: 10px 40px;
+    }
+
+    .col-md-8 ol li {
+        font-family: Times New Roman;
+        margin-left: 50px;
+        list-style: decimal;
+        color: grey;
+    }
+
+    .col-md-8 ul li {
+        font-family: Times New Roman;
+        margin-left: 50px;
+        list-style: disc;
+        color: grey;
+    }
+
+    .btnFaceBook {
+        width: 40px;
+        background-color: #3b5998;
+        color: white;
+    }
+
+    .btnFaceBook:active,
+    .btnFaceBook:focus {
+        box-shadow: none;
+        color: white;
+    }
+
+    .btnFaceBook:hover {
+        background-color: #3b5998;
+        color: black;
+    }
+
+    .btnTwitter {
+        width: 40px;
+        background-color: #1DA1F2;
+        color: white;
+    }
+
+    .btnTwitter:active,
+    .btnTwitter:focus {
+        box-shadow: none;
+        color: white;
+    }
+
+    .btnTwitter:hover {
+        background-color: #3b5998;
+        color: black;
+    }
+
+    .btnGooglePlus {
+        width: 40px;
+        background-color: #db4a39;
+        color: white;
+    }
+
+    .btnGooglePlus:active,
+    .btnGooglePlus:focus {
+        box-shadow: none;
+        color: white;
+    }
+
+    .btnGooglePlus:hover {
+        background-color: #3b5998;
+        color: black;
+    }
+</style>
+
+<div class="news-breadcrumb py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="https://keslan.kemkes.go.id/"><i class="fa fa-home" aria-hidden="true"></i> Beranda</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">artikel</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+                            <div style="color: grey">Kamis, 27 Juni 2024 15:07 WIB</div>
+                <h1>Pola Makan yang Sehat</h1>
+                <div class="mb-2">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://keslan.kemkes.go.id/view_artikel/3467/pola-makan-yang-sehat" target="_blank" class="btn btnFaceBook"><i class="fa fa-facebook" aria-hidden="true"></i> </a>
+                    <a href="https://www.twitter.com/intent/tweet?text=https://keslan.kemkes.go.id/view_artikel/3467/pola-makan-yang-sehat" target="_blank" class="btn btnTwitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://plus.google.com/share?url=https://keslan.kemkes.go.id/view_artikel/3467/pola-makan-yang-sehat" target="_blank" class="btn btnGooglePlus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                </div>
+                <img src="https://keslan.kemkes.go.id/img/bg-img/gambarartikel_1719475670_599625.png" class="rounded img-fluid img-thumbnail" alt="Responsive image">
+                <div class="pt-1"><i class="fa fa-eye" aria-hidden="true" style="color: grey"></i> 21447 </div>
+                <div style="color: grey">Promosi Kesehatan, Tim Kerja Hukum dan Humas RSST - RSUP dr. Soeradji Tirtonegoro Klaten</div>
+                <hr>
+            <p>Pola makan sehat adalah perilaku mengonsumsi makan dengan gizi seimbang guna menjaga kesehatan tubuh. Seperti yang diketahui, pola makan seseorang sangat berpengaruh pada kondisi tubuhnya. Pola makan sehat adalah upaya untuk mengatur porsi dan jenis makanan sehat yang dikonsumsi agar dapat mempertahankan kesehatan, status nutrisi, mencegah atau membantu kesembuhan penyakit. Pola makan sehat adalah perilaku membiasakan diri untuk mengonsumsi makanan yang sehat dan bergizi setiap hari. Makanan yang bergizi berupa daging, sayuran, buah-buahan, dan lain-lain.<strong> </strong>Menjaga asupan nutrisi melalui&nbsp;pola makan sehat&nbsp;adalah hal yang penting dilakukan. Namun, agar bisa mendapatkan manfaat yang maksimal dari setiap nutrisi yang dikonsumsi, pola makan harus dilakukan dengan tepat dan tentunya disesuaikan dengan kondisi kesehatan tubuh masing-masing. Menerapkan pola makan sehat menjadi salah satu cara terbaik untuk menjaga kesehatan tubuh secara menyeluruh. Adapun, pola makan sehat adalah aturan hidup sehat dalam mengonsumsi makanan sesuai dengan kebutuhan gizi harian. Asupannya bervariasi, tergantung pada usia, jenis kelamin, gaya hidup, kegiatan, dan tempat tinggal. Berkaitan dengan jumlah nutrisinya, bisa didiskusikan langsung dengan dokter spesialis gizi. Dengan begitu, kita dapat mengetahui program dan langkah penanganan gizi yang tepat, terutama jika memiliki kondisi kesehatan tertentu. Sederhananya, pola makan yang sehat adalah salah satu kebiasaan hidup sehat yang bisa kamu lakukan dengan mengonsumsi lemak sehat dan menghindari asupan lemak jenuh. Selain itu, kamu juga perlu memperbanyak asupan serat dari sayuran, buah, dan/atau gandum utuh. Perlu kamu pahami bahwa menerapkan pola makan yang tepat dengan asupan makanan sehat pada dasarnya adalah membangun salah satu kebiasaan baik</p><p><strong>Pola Makan Sehat Sesuai Anjuran Ahli Gizi</strong></p><p>Berikut ini adalah beberapa saran ahli gizi tentang makanan sehat dan cara terbaik untuk mengonsumsinya :</p><p>1. Mengonsumsi Makanan yang Bergizi</p><p>Kunci utama dari pola makan sehat, yakni mengonsumsi makanan yang mengandung nutrisi yang baik bagi tubuh. Cara pengolahan makanan juga perlu diperhatikan, apakah cara yang digunakan menghilangkan nutrisi yang dikandung oleh suatu pangan.</p><p>Cara menerapkannya adalah dengan mengonsumsi lima kelompok pangan setiap hari atau setiap kali makan. Kelima kelompok pangan tersebut adalah makanan pokok, lauk-pauk, sayuran, buah-buahan dan minuman.</p><p>2.&nbsp;Mengurangi Konsumsi Garam, Gula, dan Minyak</p><p>Tips kedua untuk menerapkan pola makan sehat ialah dengan membatasi jumlah asupan gula, minyak, dan garam tiap harinya. Konsumsi minyak yang berlebihan dapat menyebabkan dapat meningkatkan risiko kanker.</p><p>Konsumsi gula berlebih meningkatkan risiko obesitas, kanker, diabetes tipe II, penyakit kardiovaskular, dll, sedangkan garam berlebih bisa menyebabkan tekanan darah tinggi dan stroke.</p><p>3.&nbsp;Membiasakan Sarapan Pagi</p><p>Sarapan pagi memiliki manfaat penting bagi kesehatan tubuh.</p><p>Sarapan pagi dapat membantu seseorang agar fit ketika melaksanakan sejumlah aktivitas sehari-hari. Sayangnya, orang-orang masih belum membiasakan sarapan setiap pagi.</p><p>Sarapan adalah kegiatan makan dan minum yang dilakukan antara bangun pagi sampai jam 9 untuk memenuhi sebagian kebutuhan gizi harian (15-30% kebutuhan gizi) dalam rangka mewujudkan hidup sehat, aktif, dan produktif.</p><p>4.&nbsp;Penuhi Kebutuhan Cairan Tubuh</p><p>Selain makanan yang bergizi, manusia juga memerlukan sejumlah cairan agar tetap terhidrasi dengan baik. Cara memenuhi kebutuhan cairan tubuh ialah dengan meminum air putih minimal 8 gelas per hari guna tetap menjaga kondisi tubuh agar tetap sehat.</p><p>5.&nbsp;Tambah Asupan Protein</p><p>Anjuran pola makan yang pertama adalah menambah&nbsp;asupan protein. Protein merupakan nutrisi utama yang dibutuhkan tubuh untuk pembentukan otot, kulit, hormon, serta hampir semua sel dan jaringan pada sistem organ tubuh.</p><p>Selain itu, sumber makanan berprotein tinggi juga bermanfaat untuk menurunkan berat badan. Hal ini karena kandungan protein dapat meningkatkan metabolisme tubuh sehingga massa otot dan pembakaran lemak bertambah serta memberikan efek kenyang lebih lama.</p><p>6.&nbsp;Konsumsi lemak baik</p><p>Ada dua jenis lemak yang baik untuk tubuh, yaitu lemak tak jenuh tunggal dan lemak tak jenuh ganda seperti asam lemak&nbsp;omega-3.</p><p>Menurut penelitian, kedua jenis lemak ini dapat meningkatkan kadar kolesterol baik (HDL) darah dan menurunkan risiko terkena&nbsp;penyakit jantung&nbsp;dan stroke. Asupan harian lemak sehat yang direkomendasikan adalah 50–80 gram per hari.</p><p>Sumber makanan yang mengandung lemak baik meliputi alpukat, kacang-kacangan seperti kacang almond dan kacang mete, minyak sayur seperti minyak zaitun dan minyak canola, selai kacang, ikan salmon, tahu, serta kacang kedelai.</p><p>7.&nbsp;Pilih karbohidrat kompleks.</p><p>Selain protein dan lemak sehat, nutrisi lain yang diperlukan tubuh adalah karbohidrat kompleks. Seperti halnya protein, karbohidrat kompleks merupakan sumber energi untuk tubuh. Di dalam karbohidrat kompleks terkandung vitamin, mineral, dan serat.</p><p>Nasi, pasta, roti, kacang-kacangan, biji-bijian, brokoli, wortel, apel, dan pisang adalah contoh makanan yang mengandung karbohidrat kompleks dan baik untuk kesehatan tubuh.</p><p>8.&nbsp;Konsumsi susu dan produk olahan susu.</p><p>Yoghurt mengandung protein hewani, kalsium, kalium, vitamin B2, vitamin B12, dan magnesium. Salah satu produk olahan susu ini juga diketahui kaya akan bakteri baik atau&nbsp;probiotik&nbsp;yang diduga dapat meningkatkan daya tahan tubuh dan menjaga kesehatan saluran cerna. Yoghurt diduga mampu mengatasi diare pada anak-anak dan melancarkan percernaan. Agar lebih nikmat, Anda bisa mengonsumsi yoghurt dengan potongan buah segar, seperti&nbsp;stroberi, nanas, atau taburi dengan&nbsp;<em>flaxseed</em>.</p><p>9.&nbsp;Konsumsi serat</p><p>Ahli gizi juga menganjurkan untuk selalu memenuhi asupan serat. Serat sangat baik untuk memelihara kesehatan pencernaan, terutama usus. Beberapa jenis serat juga dapat membantu Anda menurunkan berat badan dan gula darah serta mengatasi&nbsp;konstipasi.</p><p>Asupan harian serat yang direkomendasikan adalah 25 gram untuk wanita dan 38 gram untuk pria. Beberapa contoh makanan yang mengandung&nbsp;serat&nbsp;tinggi adalah buah pir, stoberi, apel, pisang, buah bit, brokoli, lentil, sereal, bubur gandum, biji chia, dan ubi.</p><p><strong>Beberapa Jenis Makanan yang Perlu Dibatasi Konsumsinya</strong></p><p>Beberapa ahli gizi menyarankan untuk tidak terlalu banyak dan terlalu sering mengonsumsi daging olahan, seperti daging asap dan sosis. Selain itu, batasi konsumsi kopi yang dicampur gula, margarin, kue atau camilan kemasan, makanan kaleng, atau sereal yang ditambah gula.</p><p>Bila dikonsumsi terlalu banyak dalam jangka panjang, makanan tersebut dapat meningkatkan risiko penyakit kanker, penyakit kardiovaskular, diabetes, dan ginjal. Berbagai&nbsp;makanan cepat saji&nbsp;juga perlu dibatasi konsumsinya.</p><p>Sebisa mungkin selalu konsumsi makanan sehat dan bergizi seimbang. Pilih makanan yang mengandung lemak sehat dan hindari lemak jenuh. Perbanyak pula asupan serat, baik dari sayuran, buah-buahan, atau&nbsp;gandum utuh.</p><p>&nbsp;</p><p><strong>Referensi </strong>:</p><p>Albert Natanael, dkk .2018. <em>Perilaku Professional Terhadap Pola Makan Sehat</em>. Jurnal Kesehatan Universitas Prasetya Mulya.</p><p>Hadjimbei, E., Botsaris, G., &amp; Chrysostomou, S. 2022. <em>Beneficial Effects of Yoghurts and Probiotic Fermented Milks and Their Functional Food Potential</em>. <em>Foods</em> (Basel, Switzerland), 11(17), pp. e2691.</p><p>Hurd, R. <em>National Instittute of Health</em>. 2022. <em>MedlinePlus. Complex Carbohydrates.</em></p><p><em>Office of Disease Prevention and Health Promotion. Nutrition as We Age : Healthy Eating with the Dietary Guidelines.</em></p><p>Kubala, J. <em>Healthline</em>. 2023. <em>Healthy Food vs. Highly Processed Food : What to Know.</em></p><p>Rush, T. <em>Healthline</em> .2023. <em>Protein Intake - How Much Protein Should You Eat Per Day.</em></p><p>Gunnars, K. <em>Healthline</em> .2021. <em>28 Health and Nutrition Tips That Are Actually Evidence-Based.</em></p>        </div>
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="boxJudul text-secondary">
+                        Artikel Lain
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2">
+                                    <div class="col-md-6">
+                        <a href="https://keslan.kemkes.go.id/view_artikel/4220/lansia-mau-sehat-dan-bugar-latihan-beban-solusinya">
+                            <img src="https://keslan.kemkes.go.id/img/bg-img/gambarartikel_1760416279_324602.jpg" class="rounded img-fluid img-thumbnail" alt="Responsive image">
+                            <h5><small>Lansia Mau Sehat dan…</small></h5>
+                        </a>
+                    </div>
+                                    <div class="col-md-6">
+                        <a href="https://keslan.kemkes.go.id/view_artikel/4219/bowel-training-pada-pasien-spinal-cord-injury">
+                            <img src="https://keslan.kemkes.go.id/img/bg-img/gambarartikel_1759729639_989393.jpg" class="rounded img-fluid img-thumbnail" alt="Responsive image">
+                            <h5><small>Bowel Training pada Pasien…</small></h5>
+                        </a>
+                    </div>
+                                    <div class="col-md-6">
+                        <a href="https://keslan.kemkes.go.id/view_artikel/4218/olahraga-bagi-lanjut-usia-adalah-kunci-menjaga-kesehatan-dan-meningkatkan-kualitas-hidup">
+                            <img src="https://keslan.kemkes.go.id/img/bg-img/gambarartikel_1759721439_105385.jpg" class="rounded img-fluid img-thumbnail" alt="Responsive image">
+                            <h5><small>Olahraga bagi Lanjut Usia…</small></h5>
+                        </a>
+                    </div>
+                                    <div class="col-md-6">
+                        <a href="https://keslan.kemkes.go.id/view_artikel/4217/clean-intermittent-catheterization-pada-pasien-spinal-cord-injury">
+                            <img src="https://keslan.kemkes.go.id/img/bg-img/gambarartikel_1759721004_265893.jpg" class="rounded img-fluid img-thumbnail" alt="Responsive image">
+                            <h5><small>Clean Intermittent Catheterization pada…</small></h5>
+                        </a>
+                    </div>
+                                    <div class="col-md-6">
+                        <a href="https://keslan.kemkes.go.id/view_artikel/4216/perlukah-edukasi-kesehatan-bagi-pasien-dan-keluarga-di-rs-pada-era-digital">
+                            <img src="https://keslan.kemkes.go.id/img/bg-img/gambarartikel_1758612352_547936.jpg" class="rounded img-fluid img-thumbnail" alt="Responsive image">
+                            <h5><small>Perlukah Edukasi Kesehatan bagi…</small></h5>
+                        </a>
+                    </div>
+                                    <div class="col-md-6">
+                        <a href="https://keslan.kemkes.go.id/view_artikel/4215/mengembangkan-kecerdasan-dengan-mengajarkan-anak-mandiri">
+                            <img src="https://keslan.kemkes.go.id/img/bg-img/gambarartikel_1758612289_252145.jpg" class="rounded img-fluid img-thumbnail" alt="Responsive image">
+                            <h5><small>Mengembangkan Kecerdasan dengan Mengajarkan…</small></h5>
+                        </a>
+                    </div>
+                            </div>
+        </div>
+    </div>
+</div>
+    <style>
+  .footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1f2937;
+  }
+
+  .bg-green-600 {
+    background-color: #61c3a2;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .hidden {
+      display: none;
+    }
+
+    .logofooter {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+
+  .btnInstagram {
+    padding-top: 5px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    padding-bottom: 5px !important;
+    background-color: #C13584;
+    color: white;
+  }
+
+  .btnFacebook {
+    padding-top: 5px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    padding-bottom: 5px !important;
+    background-color: #4267B2;
+    color: white;
+  }
+
+  .btnYoutube {
+    padding-top: 5px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    padding-bottom: 5px !important;
+    background-color: #db4a39;
+    color: white;
+  }
+
+  .btnTwitter {
+    padding-top: 5px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    padding-bottom: 5px !important;
+    background-color: #1DA1F2;
+    color: white;
+  }
+
+  .maskot {
+        position: fixed;
+        bottom: 30px;
+        right: 20px;
+        width: 100px; 
+        height: auto;
+        z-index: 1000; 
+        /* animation: bounce 2s infinite; */
+    }
+    @keyframes shake {
+      0% { transform: translate(1px, 1px) rotate(0deg); }
+      10% { transform: translate(-1px, -2px) rotate(-1deg); }
+      20% { transform: translate(-3px, 0px) rotate(1deg); }
+      30% { transform: translate(3px, 2px) rotate(0deg); }
+      40% { transform: translate(1px, -1px) rotate(1deg); }
+      50% { transform: translate(-1px, 2px) rotate(-1deg); }
+      60% { transform: translate(-3px, 1px) rotate(0deg); }
+      70% { transform: translate(3px, 1px) rotate(-1deg); }
+      80% { transform: translate(-1px, -1px) rotate(1deg); }
+      90% { transform: translate(1px, 2px) rotate(0deg); }
+      100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+
+    .maskot:hover {
+      animation: shake 2s; /* Durasi animasi 0.5 detik */
+      animation-iteration-count: infinite; /* Animasi berulang terus-menerus */
+    }
+
+    .social-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      margin-right: 5px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      border: 1px solid #e5e7eb;
+      transition: all 0.3s ease;
+      width: 40px;
+      height: 40px;
+    }
+
+    .social-btn svg {
+      width: 20px;
+      height: 20px;
+      fill: #000;
+      transition: fill 0.3s ease;
+    }
+
+    .social-btn:hover {
+      background-color: #61c3a2;
+      border-color: #61c3a2;
+    }
+
+    .social-btn:hover svg {
+      fill: #ffffff;
+    }
+</style>
+
+
+<div class="footer">
+<a href="https://keslan.kemkes.go.id/pusatbantuan">
+    <img src="https://keslan.kemkes.go.id/img/maskot.png" class="maskot" alt="Maskot" onclick="window.location.href='https://keslan.kemkes.go.id/pusatbantuan';">
+</a>
+  <div class="container pt-5 pb-5">
+    <div class="row">
+
+      <div class="col-md-5 ">
+        <div class="logofooter">
+          <img style="background-size; width:240px;" src="https://keslan.kemkes.go.id/img/logo putih.png">
+        </div>
+
+        <div style="color: white; display: flex;" class="mt-3">
+          <i style="width:20px; height:20px; display: flex;" class="mr-2">
+            <svg xmlns="https://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+            </svg>
+          </i>
+          Jl. HR. Rasuna Said Blok X-5 Kav. 4 - 9, Kuningan, RT.1/RW.2, Kuningan, Kuningan Tim., Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12950
+        </div>
+
+        <div style="color: white; display: flex;" class="mt-3">
+          <i style="width:20px; height:20px; display: flex;" class="mr-2">
+            <svg xmlns="https://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+            </svg>
+          </i>
+          humas.keslan@kemkes.go.id
+          humas.keslan@gmail.com
+        </div>
+
+        <!--<div style="color: white; display: flex;" class="mt-3">
+          <i style="width:20px; height:20px; display: flex;" class="mr-2">
+            <svg xmlns="https://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+            </svg>
+          </i>
+          021-5222432
+        </div>-->
+        
+
+        <!-- <div class=" mt-3">
+          <a href="https://www.youtube.com/channel/UCj_NnsqEVURJycqjWzVpRSA" class="btn btnYoutube" target="_blank"><i class="fa fa-youtube fa-lg" aria-hidden="true"></i></a>
+          <a href="https://id-id.facebook.com/ditjen.yankes" class="btn btnFacebook" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/ditjenyankes" class="btn btnTwitter" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+        </div> -->
+        <div class="mt-3">
+          <a href="https://www.youtube.com/channel/UCj_NnsqEVURJycqjWzVpRSA" class="social-btn" target="_blank" aria-label="YouTube">
+            <!-- YouTube -->
+            <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M21.8 8s-.2-1.5-.8-2.1c-.8-.8-1.6-.8-2-0.9C16.3 5 12 5 12 5s-4.3 0-7 .1c-.4 0-1.2.1-2 .9C2.4 6.5 2.2 8 2.2 8S2 9.6 2 11.1v1.8C2 14.4 2.2 16 2.2 16s.2 1.5.8 2.1c.8.8 1.8.8 2.3.9 1.7.1 6.7.1 6.7.1s4.3 0 7-.1c.4 0 1.2-.1 2-.9.6-.6.8-2.1.8-2.1s.2-1.6.2-3.1v-1.8C22 9.6 21.8 8 21.8 8zM9.8 14.7V9.3l5 2.7-5 2.7z"></path>
+            </svg>
+          </a>
+
+          <a href="https://id-id.facebook.com/ditjen.yankes" class="social-btn" target="_blank" aria-label="Facebook">
+            <!-- Facebook -->
+            <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M22 12a10 10 0 1 0-11.6 9.9v-7H8v-3h2.4V9.5c0-2.4 1.4-3.8 3.5-3.8 1 0 2 .1 2 .1v2.3h-1.1c-1.1 0-1.4.7-1.4 1.3V12H16l-.4 3h-2.8v7A10 10 0 0 0 22 12"></path>
+            </svg>
+          </a>
+
+          <a href="https://twitter.com/ditjenyankes" class="social-btn" target="_blank" aria-label="X (Twitter)">
+            <!-- X / Twitter -->
+            <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M18.244 2H21l-6.43 7.36L21 22h-5.975l-4.676-6.515L5.123 22H2.36l6.86-7.84L2.36 2h6.094l4.228 6.02L18.244 2zM17.2 20.3l1.5-1.67L7.17 4.3H5.54l11.66 16z"></path>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="col-md-5 hidden">
+        <h4 class="font-bold" style="color: white;">Satuan Kerja</h4>
+        <ul class="text-sm">
+          <li class="mt-2 text-gray-300 hover:text-white min-w-max"><a style="color: white;font-size: 14px" href="https://keslan.kemkes.go.id/profil/satker/Sekretariat Direktorat Jenderal Kesehatan Lanjutan">Sekretariat Direktorat Jenderal Kesehatan Lanjutan</a></li>
+          <li class="mt-2 text-gray-300 hover:text-white min-w-max"><a style="color: white;font-size: 14px" href="https://keslan.kemkes.go.id/profil/satker/Direktorat Pelayanan Klinis">Direktorat Pelayanan Klinis</a></li>
+          <li class="mt-2 text-gray-300 hover:text-white min-w-max"><a style="color: white;font-size: 14px" href="https://keslan.kemkes.go.id/profil/satker/Direktorat Pengembangan Pelayanan Kesehatan Rujukan">Direktorat Pengembangan Pelayanan Kesehatan Rujukan</a></li>
+          <li class="mt-2 text-gray-300 hover:text-white min-w-max"><a style="color: white;font-size: 14px" href="https://keslan.kemkes.go.id/profil/satker/Direktorat Tata Kelola Pelayanan Kesehatan Rujukan">Direktorat Tata Kelola Pelayanan Kesehatan Rujukan</a></li>
+          <li class="mt-2 text-gray-300 hover:text-white min-w-max"><a style="color: white;font-size: 14px" href="https://keslan.kemkes.go.id/profil/satker/Direktorat Fasilitas Pelayanan Kesehatan Rujukan">Direktorat Fasilitas Pelayanan Kesehatan Rujukan</a></li>
+          <li class="mt-2 text-gray-300 hover:text-white min-w-max"><a style="color: white;font-size: 14px" href="https://keslan.kemkes.go.id/profil/satker/Direktorat Mutu Pelayanan Kesehatan Rujukan">Direktorat Mutu Pelayanan Kesehatan Rujukan</a></li>
+          <li class="mt-2 text-gray-300 hover:text-white min-w-max"><a style="color: white;font-size: 14px" href="https://keslan.kemkes.go.id/upt">Unit Pelaksana Tugas Pelayanan Kesehatan</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2 hidden">
+        <h4 class="font-bold" style="color: white;">Link Cepat</h4>
+        <ul class="text-sm">
+          <li class="text-gray-300 hover:text-white"><a style="color: white;font-size: 16px" href="https://keslan.kemkes.go.id/">Beranda</a></li>
+          <li class="mt-2 text-gray-300 hover:text-white"><a style="color: white;font-size: 14px" href="#">Kebijakan</a></li>
+          <li class="mt-2 text-gray-300 hover:text-white"><a style="color: white;font-size: 14px" href="https://keslan.kemkes.go.id/pusatbantuan">FAQ</a></li>
+          <li class="mt-2 text-gray-300 hover:text-white"><a style="color: white;font-size: 14px" href="https://keslan.kemkes.go.id/sitemap">Peta Situs</a></li>
+          <li class="mt-2 text-gray-300 hover:text-white"><a style="color: white;font-size: 14px" href="https://keslan.kemkes.go.id/contact">Hubungi Kami</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  <div class="px-5 lg:px-40 text-center w-full bg-green-600 text-white text-xs py-2" style="color: white; font-size: 13px">
+    <i class="fa fa-copyright" aria-hidden="true"></i> anjayyyyy
+  </div>
+</div>
+
+
+<script src="https://website-widgets.pages.dev/dist/sienna.min.js" defer=""></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="#" integrity="#" crossorigin="#"></script>
+    <script src="#" integrity="#" crossorigin="#"></script>
+    <script src="#" integrity="#" crossorigin="#"></script>
+    <script src="#"></script>
+<script defer="" src="#" integrity="#" data-cf-beacon="{&quot;rayId&quot;:&quot;997869b4689dcdf1&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.9.1&quot;,&quot;token&quot;:&quot;e2a765f324f4412da187da8b414d804f&quot;}" crossorigin="anonymous"></script>
+
+
+</strict-transport-security:></body></html>
